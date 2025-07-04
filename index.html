@@ -16,8 +16,6 @@
   <body>
     <div id="root"></div>
     <script src="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.64.2/build/stlite.js"></script>
-    <script src="./mnt/data2.txt"></script>
-   <link  href="./mnt/data2.txt">Visit W3Schools.com!</link>
     <script>
            stlite.mount(
 
@@ -26,7 +24,7 @@
             requirements: ["pandas", "matplotlib"], 
                 entrypoint: "main.py",
                 files: {
-                  "/bd/funcionarios.csv": {
+                  "funcionarios.csv": {
                     url: "./bd/funcionarios.csv"
                   },
                     "main.py": {url: "main.py"}
