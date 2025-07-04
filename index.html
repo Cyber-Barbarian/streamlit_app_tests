@@ -23,16 +23,11 @@
 
       {
                 
-            requirements: ["pandas", "matplotlib"],
-            //idbfsMountpoints: ["/mnt"], 
+            requirements: ["pandas", "matplotlib"], 
                 entrypoint: "main.py",
                 files: {
-                    "/mnt/data2.txt": {
-                    url: "/mnt/data2.txt",
-                  },
-
                   "/bd/funcionarios.csv": {
-                    url: "/bd/funcionarios.csv",
+                    url: "/bd/funcionarios.csv"
                   },
                     "main.py": {url: "main.py"}
                     }
