@@ -45,7 +45,6 @@ st.write(df_func.dtypes)
 st.dataframe(df_func)
 birthdate_min = st.slider ("Selecione a data de nascimento mínima:",datetime.datetime(1980,1,1),datetime.datetime(2000,1,1))
 
-#birthdate_max = st.slider ("Selecione a data de nascimento máxima:",birthdate_min + relativedelta(years = 1),datetime.datetime(2000,1,1))
 birthdate_max = st.slider ("Selecione a data de nascimento máxima:",datetime.datetime(1980,1,1), datetime.datetime(2000,1,1))
 
 df_filtrado = df_func[(df_func["birthdate"] >= birthdate_min) & (df_func["birthdate"] <= birthdate_max)]
