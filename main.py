@@ -39,7 +39,7 @@ st.multiselect("Selecione várias opções", ["Opção A", "Opção B", "Opção
 
 st.subheader("Banco de dados (csv)")
 
-df_func = pd.read_csv("./bd/funcionarios.csv")
+df_func = pd.read_csv("funcionarios.csv"")
 df_func['birthdate'] = pd.to_datetime(df_func['birthdate'])
 st.write(df_func.dtypes)
 st.dataframe(df_func)
